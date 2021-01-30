@@ -12,4 +12,8 @@ echo 'SETTING PROPERTIES'
 echo '-------------------------'
 cd ~/apps/_advance
 
+echo '-------------------------'
+echo 'INSTALLING PACKAGES'
+echo '-------------------------'
+bash ~/utms/packages/advanced/aircrack-installer.sh
 bash ~/utms/packages/advanced/metasploit-installer.sh

@@ -6,6 +6,7 @@ echo 'You started base-installer'
 echo 'Author: Matvey3850'
 echo 'GitHub: github.com/Matvey3850/utms'
 echo '-------------------------'
+echo '     '
 
 echo '-------------------------'
 echo 'SETTING PROPERTIES'
@@ -16,8 +17,6 @@ cd ~/apps
 mkdir _advanced
 mkdir smsbomber
 cd ~
-chmod +x install
-chmod +x install-adv
 
 echo '-------------------------'
 echo 'UPDATING PACKAGES'
@@ -25,7 +24,9 @@ echo '-------------------------'
 pkg update -y
 pkg upgrade -y
 
+echo '-------------------------'
 echo 'INSTALLING REPOSITORIES'
+echo '-------------------------'
 pkg install root-repo -y
 pkg install unstable-repo -y
 
@@ -42,12 +43,3 @@ pkg install php -y
 pkg install wireless-tools -y
 pkg install net-tools -y
 pkg install openssh -y
-
-echo '-------------------------'
-echo 'INSTALLING FILES'
-echo '-------------------------'
-bash ~/utms/packages/smsbomber-installer.sh
-cd ~/utms
-bash ~/utms/packages/toolx-installer.sh
-cd ~/utms
-bash ~/utms/packages/zphisher-installer.sh

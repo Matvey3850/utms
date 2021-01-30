@@ -1,0 +1,11 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo '-------------------------'
+echo 'INSTALLING FILES'
+echo '-------------------------'
+cd ~/utms
+bash ~/utms/packages/smsbomber-installer.sh
+cd ~/utms
+bash ~/utms/packages/toolx-installer.sh
+cd ~/utms
+bash ~/utms/packages/zphisher-installer.sh
