@@ -1,0 +1,15 @@
+#!/data/data/com.termux/files/usr/bin/bash
+clear
+
+echo '-------------------------'
+echo 'You started advance-installer'
+echo 'Author: Matvey3850'
+echo 'GitHub: github.com/Matvey3850/utms'
+echo '-------------------------'
+
+echo '-------------------------'
+echo 'SETTING PROPERTIES'
+echo '-------------------------'
+cd ~/apps/_advance
+
+bash ~/utms/packages/advanced/metasploit-installer.sh
