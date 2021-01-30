@@ -6,27 +6,32 @@ cd ~
 mkdir apps
 cd ~/apps
 mkdir smsbomber
-mkdir toolx
 mkdir zphisher
 cd ~
 
 echo 'UPDATING PACKAGES'
-pkg update
-pkg upgrade
+pkg update -y
+pkg upgrade -y
 
 echo 'INSTALLING REPOSITORIES'
-pkg install root-repo
-pkg install unstable-repo
+pkg install root-repo -y
+pkg install unstable-repo -y
 
 echo 'INSTALLING PACKAGES'
-pkg install bash-completion
-pkg install sudo
-pkg install vim
-pkg install wget
-pkg install python
-pkg install php
-pkg install wireless-tools
-pkg install net-tools
-pkg install openssh
+pkg install bash-completion -y
+pkg install tsu -y
+pkg install man -y
+pkg install vim -y
+pkg install wget -y
+pkg install python -y
+pkg install php -y
+pkg install wireless-tools -y
+pkg install net-tools -y
+pkg install openssh -y
 
 echo 'INSTALLING FILES'
+bash ~/utms/packages/smsbomber-installer.sh
+cd ~/utms
+bash ~/utms/packages/toolx-installer.sh
+cd ~/utms
+bash ~/utms/packages/zphisher-installer.sh
