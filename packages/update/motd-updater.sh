@@ -1,6 +1,3 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-cd ..
-cd usr/etc
-wget https://www.dropbox.com/s/sa05apaebdey5re/motd
-cd ~
+cp ~/utms/packages/update/files/motd /data/data/com.termux/files/usr/etc/motd
