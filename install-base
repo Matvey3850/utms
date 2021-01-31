@@ -43,3 +43,9 @@ pkg install php -y
 pkg install wireless-tools -y
 pkg install net-tools -y
 pkg install openssh -y
+
+echo '-------------------------'
+echo 'DOWNLOADING FILES'
+echo '-------------------------'
+cd ~
+bash ~/utms/packages/update/motd-updater.sh
